@@ -1,0 +1,805 @@
+.pptbox {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    perspective: 1200px;
+}
+.pptbox > section {
+  opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.show {
+    opacity: 1!important;
+}
+@keyframes drop-current-pre {
+    from {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    40% {
+      opacity: 1;
+      transform: rotate(55deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: rotate(35deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    40% {
+      opacity: 1;
+      transform: rotate(45deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(100%) rotate(45deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+}
+@keyframes drop-current-next {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes drop-next-current {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes drop-pre-current {
+    from {
+      opacity: 1;
+      transform: translateY(100%) rotate(45deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    40% {
+      opacity: 1;
+      transform: rotate(45deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    50% {
+      opacity: 1;
+      transform: rotate(35deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    40% {
+      opacity: 1;
+      transform: rotate(55deg);
+      transform-origin: left top;
+      z-index: 1;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: left top;
+      z-index: 1;
+    }
+}
+.drop-current-pre {
+    animation-name: drop-current-pre;animation-fill-mode: both;
+}
+.drop-current-next {
+    animation-name: drop-next-current;animation-fill-mode: both;
+}
+.drop-next-current {
+    animation-name: drop-next-current;animation-fill-mode: both;
+}
+.drop-pre-current {
+    animation-name: drop-pre-current;animation-fill-mode: both;
+}
+/*drag-animation*/
+@keyframes drag-current-pre {
+    from {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-90deg);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+}
+@keyframes drag-current-next {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes drag-next-current {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+}
+@keyframes drag-pre-current {
+    from {
+      opacity: 1;
+      transform: rotate(-90deg);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+}
+.drag-current-pre {
+    animation-name: drag-current-pre;
+    animation-fill-mode: both;
+}
+.drag-current-next {
+    animation-name: drag-current-next;
+    animation-fill-mode: both;
+}
+.drag-next-current {
+    animation-name: drag-next-current;
+    animation-fill-mode: both;
+}
+.drag-pre-current {
+    animation-name: drag-pre-current;
+    animation-fill-mode: both;
+}
+/*fade-animation*/
+@keyframes fade-current-pre {
+    from {
+      opacity: 1;
+      z-index: 1;
+    }
+    to {
+      opacity: 0;
+      z-index: 0;
+    }
+}
+@keyframes fade-current-next {
+    from {
+      opacity: 1;
+      z-index: 1;
+    }
+    to {
+      opacity: 0;
+      z-index: 0;
+    }
+}
+@keyframes fade-next-current {
+    from {
+      opacity: 0;
+      z-index: 0;
+    }
+    to {
+      opacity: 1;
+      z-index: 1;
+    }
+}
+@keyframes fade-pre-current {
+    from {
+      opacity: 0;
+      z-index: 0;
+    }
+    to {
+      opacity: 1;
+      z-index: 1;
+    }
+}
+.fade-current-pre {
+    animation-name: fade-current-pre;animation-fill-mode: both;
+}
+.fade-current-next {
+    animation-name: fade-current-next;animation-fill-mode: both;
+}
+.fade-next-current {
+    animation-name: fade-next-current;animation-fill-mode: both;
+}
+.fade-pre-current {
+    animation-name: fade-pre-current;animation-fill-mode: both;
+}
+/*push-animation*/
+@keyframes push-current-pre {
+    from {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left center;
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: left center;
+    }
+}
+@keyframes push-current-next {
+    from {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: right center;
+    }
+}
+@keyframes push-next-current {
+    from {
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: right center;
+    }
+}
+@keyframes push-pre-current {
+    from {
+      opacity: 1;
+      transform: scaleX(0);
+      transform-origin: left center;
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left center;
+    }
+}
+.push-current-pre {
+    animation-name: push-current-pre;animation-fill-mode: both;
+}
+.push-current-next {
+    animation-name: push-current-next;animation-fill-mode: both;
+}
+.push-next-current {
+    animation-name: push-next-current;animation-fill-mode: both;
+}
+.push-pre-current {
+    animation-name: push-pre-current;animation-fill-mode: both;
+}
+/*rotate-animation*/
+@keyframes rotate-current-pre {
+    from {
+      opacity: 1;
+      transform: rotateY(0);
+      z-index: 1;
+    }
+    50% {
+      transform: rotateY(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(-180deg);
+      z-index: 0;
+    }
+}
+@keyframes rotate-current-next {
+    from {
+      opacity: 1;
+      transform: rotateY(0);
+      z-index: 1;
+    }
+    50% {
+      transform: rotateY(90deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(180deg);
+      z-index: 0;
+    }
+}
+@keyframes rotate-next-current {
+    from {
+      opacity: 1;
+      transform: rotateY(180deg);
+      z-index: 0;
+    }
+    50% {
+      transform: rotateY(90deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0);
+      z-index: 1;
+    }
+}
+@keyframes rotate-pre-current {
+    from {
+      opacity: 1;
+      transform: rotateY(-180deg);
+      z-index: 0;
+    }
+    50% {
+      transform: rotateY(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0);
+      z-index: 1;
+    }
+}
+.rotate-current-pre {
+    animation-name: rotate-current-pre;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+.rotate-current-next {
+    animation-name: rotate-current-next;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+.rotate-next-current {
+    animation-name: rotate-next-current;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+.rotate-pre-current {
+    animation-name: rotate-pre-current;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+/*scale-animation*/
+@keyframes scale-current-pre {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+    20% {
+      transform: translateX(0) scale(0.75);
+    }
+    80% {
+      transform: translateX(-100%) scale(0.75);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-100%) scale(1);
+    }
+}
+@keyframes scale-current-next {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+    20% {
+      transform: translateX(0) scale(0.75);
+    }
+    80% {
+      transform: translateX(100%) scale(0.75);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(100%) scale(1);
+    }
+}
+@keyframes scale-next-current {
+    from {
+      opacity: 1;
+      transform: translateX(100%) scale(1);
+    }
+    20% {
+      transform: translateX(100%) scale(0.75);
+    }
+    80% {
+      transform: translateX(0) scale(0.75);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+}
+@keyframes scale-pre-current {
+    from {
+      opacity: 1;
+      transform: translateX(-100%) scale(1);
+    }
+    20% {
+      transform: translateX(-100%) scale(0.75);
+    }
+    80% {
+      transform: translateX(0) scale(0.75);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+    }
+}
+.scale-current-pre {
+    animation-name: scale-current-pre;animation-fill-mode: both;
+}
+.scale-current-next {
+    animation-name: scale-current-next;animation-fill-mode: both;
+}
+.scale-next-current {
+    animation-name: scale-next-current;animation-fill-mode: both;
+}
+.scale-pre-current {
+    animation-name: scale-pre-current;animation-fill-mode: both;
+}
+/*slide-animation*/
+@keyframes slide-current-pre {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+}
+@keyframes slide-current-next {
+    from {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+}
+@keyframes slide-next-current {
+    from {
+      opacity: 1;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+@keyframes slide-pre-current {
+    from {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.slide-current-pre {
+    animation-name: slide-current-pre;animation-fill-mode: both;
+}
+.slide-current-next {
+    animation-name: slide-current-next;animation-fill-mode: both;
+}
+.slide-next-current {
+    animation-name: slide-next-current;animation-fill-mode: both;
+}
+.slide-pre-current {
+    animation-name: slide-pre-current;animation-fill-mode: both;
+}
+/*switch-aniamtion*/
+@keyframes switch-current-pre {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      /*transform-origin: right center;*/
+      z-index: 1;
+    }
+    50% {
+      transform: translateX(-50%) scale(0.8);
+      /*transform-origin: left center;*/
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%) scale(0.6);
+      transform-origin: right center;
+      z-index: 0;
+    }
+}
+@keyframes switch-current-next {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      /*transform-origin: right center;*/
+      z-index: 1;
+    }
+    50% {
+      transform: translateX(50%) scale(0.8);
+      /*transform-origin: right center;*/
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%) scale(0.6);
+      /*transform-origin: right center;*/
+      z-index: 0;
+    }
+}
+@keyframes switch-next-current {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      /*transform-origin: right center;*/
+      z-index: 0;
+    }
+    50% {
+      transform: translateX(50%) scale(0.6);
+      /*transform-origin: right center;*/
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      /*transform-origin: right center;*/
+      z-index: 1;
+    }
+}
+@keyframes switch-pre-current {
+    from {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      /*transform-origin: right center;*/
+      z-index: 0;
+    }
+    50% {
+      transform: translateX(-50%) scale(0.6);
+      /*transform-origin: right center;*/
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+      /*transform-origin: right center;*/
+      z-index: 1;
+    }
+}
+.switch-current-pre {
+    animation-name: switch-current-pre;animation-fill-mode: both;
+}
+.switch-current-next {
+    animation-name: switch-current-next;animation-fill-mode: both;
+}
+.switch-next-current {
+    animation-name: switch-next-current;animation-fill-mode: both;
+}
+.switch-pre-current {
+    animation-name: switch-pre-current;animation-fill-mode: both;
+}
+/*skew-animation*/
+@keyframes skew-current-pre {
+    from {
+      opacity: 1;
+      transform: rotateY(0) translateX(0) scale(1);
+      transform-origin: right center;
+    }
+    20% {
+      transform: rotateY(-20deg) translateX(0) scale(0.9);
+      transform-origin: right center;
+    }
+    80% {
+      transform: rotateY(-20deg) translateX(-100%) scale(0.9);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0) translateX(-100%) scale(1);
+      transform-origin: right center;
+    }
+}
+@keyframes skew-current-next {
+    from {
+      opacity: 1;
+      transform: rotateY(0) translateX(0) scale(1);
+      transform-origin: right center;
+    }
+    20% {
+      transform: rotateY(-20deg) translateX(0) scale(0.9);
+      transform-origin: right center;
+    }
+    80% {
+      transform: rotateY(-20deg) translateX(100%) scale(0.9);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0) translateX(100%) scale(1);
+      transform-origin: right center;
+    }
+}
+@keyframes skew-next-current {
+    from {
+      opacity: 1;
+      transform: rotateY(0) translateX(100%) scale(1);
+      transform-origin: right center;
+    }
+    20% {
+      transform: rotateY(-20deg) translateX(100%) scale(0.9);
+      transform-origin: right center;
+    }
+    80% {
+      transform: rotateY(-20deg) translateX(0) scale(0.9);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0) translateX(0) scale(1);
+      transform-origin: right center;
+    }
+}
+@keyframes skew-pre-current {
+    from {
+      opacity: 1;
+      transform: rotateY(0) translateX(-100%) scale(1);
+      transform-origin: right center;
+    }
+    20% {
+      transform: rotateY(-20deg) translateX(-100%) scale(0.9);
+      transform-origin: right center;
+    }
+    80% {
+      transform: rotateY(-20deg) translateX(0) scale(0.9);
+      transform-origin: right center;
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0) translateX(0) scale(1);
+      transform-origin: right center;
+    }
+}
+.skew-current-pre {
+    animation-name: skew-current-pre;animation-fill-mode: both;
+}
+.skew-current-next {
+    animation-name: skew-current-next;animation-fill-mode: both;
+}
+.skew-next-current {
+    animation-name: skew-next-current;animation-fill-mode: both;
+}
+.skew-pre-current {
+    animation-name: skew-pre-current;animation-fill-mode: both;
+}
+/*tumble-animation*/
+@keyframes tumble-current-pre {
+    from {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: center 200%;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-45deg);
+      transform-origin: center 200%;
+    }
+}
+@keyframes tumble-current-next {
+    from {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: center 200%;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(45deg);
+      transform-origin: center 200%;
+    }
+}
+@keyframes tumble-next-current {
+    from {
+      opacity: 1;
+      transform: rotate(45deg);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0deg);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+}
+@keyframes tumble-pre-current {
+    from {
+      opacity: 1;
+      transform: rotate(-45deg);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0);
+      transform-origin: center 200%;
+      z-index: 1;
+    }
+}
+.tumble-current-pre {
+    animation-name: tumble-current-pre;
+    animation-fill-mode: both;
+}
+.tumble-current-next {
+    animation-name: tumble-current-next;
+    animation-fill-mode: both;
+}
+.tumble-next-current {
+    animation-name: tumble-next-current;
+    animation-fill-mode: both;
+}
+.tumble-pre-current {
+    animation-name: tumble-pre-current;
+    animation-fill-mode: both;
+}
+/*turn-animation*/
+@keyframes turn-current-pre {
+    from {
+      opacity: 1;
+      transform: rotateY(0);
+      transform-origin: left center;
+      z-index: 1;
+    }
+    to {
+      opacity: 0;
+      transform: rotateY(-90deg);
+      transform-origin: left center;
+      z-index: 1;
+    }
+}
+@keyframes turn-current-next {
+    from {
+      opacity: 1;
+      transform: rotateY(0);
+      transform-origin: left center;
+      z-index: 1;
+    }
+    to {
+      opacity: 0;
+      transform: rotateY(90deg);
+      transform-origin: left center;
+      z-index: 1;
+    }
+}
+@keyframes turn-next-current {
+    from {
+      opacity: 0;
+      transform: rotateY(90deg);
+      transform-origin: left center;
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0);
+      transform-origin: left center;
+    }
+}
+@keyframes turn-pre-current {
+    from {
+      opacity: 0;
+      transform: rotateY(-90deg);
+      transform-origin: left center;
+    }
+    to {
+      opacity: 1;
+      transform: rotateY(0);
+      transform-origin: left center;
+    }
+}
+.turn-current-pre {
+    animation-name: turn-current-pre;animation-fill-mode: both;
+}
+.turn-current-next {
+    animation-name: turn-current-next;animation-fill-mode: both;
+}
+.turn-next-current {
+    animation-name: turn-next-current;animation-fill-mode: both;
+}
+.turn-pre-current {
+    animation-name: turn-pre-current;animation-fill-mode: both;
+}

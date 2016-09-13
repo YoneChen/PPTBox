@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html,body {
+    height: 100%;
+}
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  .example-title {
+    width:75%;
+    background-color:#fff;
+    margin:20% auto 0 auto;
+    padding:18px 0;
+    font-size:36px;
+    color:#34495e;
+    text-align:center;
+  }
+  .example-content {
+    width: 75%;
+    margin: 64px auto 0 auto;
+  }
+  .example-content > p {
+    line-height: 120%;
+    color: #fff;
+  }
+  pre {
+      border-radius:2px;
+      padding:8px;
+      background-color:rgba(0,0,0,0.3);
+      color:#fff;
+      font-size:12px;
+      overflow: auto;
+  }
