@@ -94,16 +94,28 @@
     }
 }
 .drop-current-pre {
-    animation-name: drop-current-pre;animation-fill-mode: both;
+    animation-name: drop-current-pre;
+    -webkit-animation-name: drop-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .drop-current-next {
-    animation-name: drop-next-current;animation-fill-mode: both;
+    animation-name: drop-next-current;
+    -webkit-animation-name: drop-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .drop-next-current {
-    animation-name: drop-next-current;animation-fill-mode: both;
+    animation-name: drop-next-current;
+    -webkit-animation-name: drop-next-current;
+    animation-fill-mode: both;   
+    -webkit-animation-fill-mode: both;
 }
 .drop-pre-current {
-    animation-name: drop-pre-current;animation-fill-mode: both;
+    animation-name: drop-pre-current;
+    -webkit-animation-name:  drop-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*drag-animation*/
 @keyframes drag-current-pre {
@@ -152,19 +164,27 @@
 }
 .drag-current-pre {
     animation-name: drag-current-pre;
+    -webkit-animation-name: drag-current-pre;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .drag-current-next {
     animation-name: drag-current-next;
+    -webkit-animation-name: drag-current-next;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .drag-next-current {
     animation-name: drag-next-current;
+    -webkit-animation-name: drag-next-current;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .drag-pre-current {
     animation-name: drag-pre-current;
+    -webkit-animation-name: drag-pre-current;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*fade-animation*/
 @keyframes fade-current-pre {
@@ -208,16 +228,28 @@
     }
 }
 .fade-current-pre {
-    animation-name: fade-current-pre;animation-fill-mode: both;
+    animation-name: fade-current-pre;
+    -webkit-animation-name: fade-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .fade-current-next {
-    animation-name: fade-current-next;animation-fill-mode: both;
+    animation-name: fade-current-next;
+    -webkit-animation-name: fade-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .fade-next-current {
-    animation-name: fade-next-current;animation-fill-mode: both;
+    animation-name: fade-next-current;
+    -webkit-animation-name: fade-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .fade-pre-current {
-    animation-name: fade-pre-current;animation-fill-mode: both;
+    animation-name: fade-pre-current;
+    -webkit-animation-name: fade-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*push-animation*/
 @keyframes push-current-pre {
@@ -269,16 +301,28 @@
     }
 }
 .push-current-pre {
-    animation-name: push-current-pre;animation-fill-mode: both;
+    animation-name: push-current-pre;
+    -webkit-animation-name: push-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .push-current-next {
-    animation-name: push-current-next;animation-fill-mode: both;
+    animation-name: push-current-next;
+    -webkit-animation-name: push-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .push-next-current {
-    animation-name: push-next-current;animation-fill-mode: both;
+    animation-name: push-next-current;
+    -webkit-animation-name: push-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .push-pre-current {
-    animation-name: push-pre-current;animation-fill-mode: both;
+    animation-name: push-pre-current;
+    -webkit-animation-name: push-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*rotate-animation*/
 @keyframes rotate-current-pre {
@@ -343,23 +387,35 @@
 }
 .rotate-current-pre {
     animation-name: rotate-current-pre;
-    animation-fill-mode: both;
+    -webkit-animation-name: rotate-current-pre;
     animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .rotate-current-next {
     animation-name: rotate-current-next;
-    animation-fill-mode: both;
+    -webkit-animation-name: rotate-current-next;
     animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .rotate-next-current {
     animation-name: rotate-next-current;
-    animation-fill-mode: both;
+    -webkit-animation-name: rotate-next-current;
     animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .rotate-pre-current {
     animation-name: rotate-pre-current;
-    animation-fill-mode: both;
+    -webkit-animation-name: rotate-pre-current;
     animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*scale-animation*/
 @keyframes scale-current-pre {
@@ -427,16 +483,28 @@
     }
 }
 .scale-current-pre {
-    animation-name: scale-current-pre;animation-fill-mode: both;
+    animation-name: scale-current-pre;
+    -webkit-animation-name: scale-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .scale-current-next {
-    animation-name: scale-current-next;animation-fill-mode: both;
+    animation-name: scale-current-next;
+    -webkit-animation-name: scale-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .scale-next-current {
-    animation-name: scale-next-current;animation-fill-mode: both;
+    animation-name: scale-next-current;
+    -webkit-animation-name: scale-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .scale-pre-current {
-    animation-name: scale-pre-current;animation-fill-mode: both;
+    animation-name: scale-pre-current;
+    -webkit-animation-name: scale-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*slide-animation*/
 @keyframes slide-current-pre {
@@ -480,16 +548,28 @@
     }
 }
 .slide-current-pre {
-    animation-name: slide-current-pre;animation-fill-mode: both;
+    animation-name: slide-current-pre;
+    -webkit-animation-name: slide-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .slide-current-next {
-    animation-name: slide-current-next;animation-fill-mode: both;
+    animation-name: slide-current-next;
+    -webkit-animation-name: slide-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .slide-next-current {
-    animation-name: slide-next-current;animation-fill-mode: both;
+    animation-name: slide-next-current;
+    -webkit-animation-name: slide-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .slide-pre-current {
-    animation-name: slide-pre-current;animation-fill-mode: both;
+    animation-name: slide-pre-current;
+    -webkit-animation-name: slide-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*switch-aniamtion*/
 @keyframes switch-current-pre {
@@ -565,16 +645,28 @@
     }
 }
 .switch-current-pre {
-    animation-name: switch-current-pre;animation-fill-mode: both;
+    animation-name: switch-current-pre;
+    -webkit-animation-name: switch-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .switch-current-next {
-    animation-name: switch-current-next;animation-fill-mode: both;
+    animation-name: switch-current-next;
+    -webkit-animation-name: switch-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .switch-next-current {
-    animation-name: switch-next-current;animation-fill-mode: both;
+    animation-name: switch-next-current;
+    -webkit-animation-name: switch-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .switch-pre-current {
-    animation-name: switch-pre-current;animation-fill-mode: both;
+    animation-name: switch-pre-current;
+    -webkit-animation-name: switch-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*skew-animation*/
 @keyframes skew-current-pre {
@@ -658,16 +750,28 @@
     }
 }
 .skew-current-pre {
-    animation-name: skew-current-pre;animation-fill-mode: both;
+    animation-name: skew-current-pre;
+    -webkit-animation-name: skew-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .skew-current-next {
-    animation-name: skew-current-next;animation-fill-mode: both;
+    animation-name: skew-current-next;
+    -webkit-animation-name: skew-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .skew-next-current {
-    animation-name: skew-next-current;animation-fill-mode: both;
+    animation-name: skew-next-current;
+    -webkit-animation-name: skew-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .skew-pre-current {
-    animation-name: skew-pre-current;animation-fill-mode: both;
+    animation-name: skew-pre-current;
+    -webkit-animation-name: skew-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*tumble-animation*/
 @keyframes tumble-current-pre {
@@ -724,19 +828,27 @@
 }
 .tumble-current-pre {
     animation-name: tumble-current-pre;
+    -webkit-animation-name: tumble-current-pre;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .tumble-current-next {
     animation-name: tumble-current-next;
+    -webkit-animation-name: tumble-current-next;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .tumble-next-current {
     animation-name: tumble-next-current;
+    -webkit-animation-name: tumble-next-current;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .tumble-pre-current {
     animation-name: tumble-pre-current;
+    -webkit-animation-name: tumble-pre-current;
     animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 /*turn-animation*/
 @keyframes turn-current-pre {
@@ -792,14 +904,26 @@
     }
 }
 .turn-current-pre {
-    animation-name: turn-current-pre;animation-fill-mode: both;
+    animation-name: turn-current-pre;
+    -webkit-animation-name: turn-current-pre;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .turn-current-next {
-    animation-name: turn-current-next;animation-fill-mode: both;
+    animation-name: turn-current-next;
+    -webkit-animation-name: turn-current-next;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .turn-next-current {
-    animation-name: turn-next-current;animation-fill-mode: both;
+    animation-name: turn-next-current;
+    -webkit-animation-name: turn-next-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }
 .turn-pre-current {
-    animation-name: turn-pre-current;animation-fill-mode: both;
+    animation-name: turn-pre-current;
+    -webkit-animation-name: turn-pre-current;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
 }

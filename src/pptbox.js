@@ -114,11 +114,12 @@ function PPTBox(options, container) {
     },
     getSpeed:function (speed) {
         switch (speed) {
-            case 'x-slow': this.options.speed = 30000; break;
+            case 'x-slow': this.options.speed = 3200; break;
             case 'slow': this.options.speed = 1200; break;
-            case 'fast': this.options.speed = 500; break;
-            case 'normal': this.options.speed = 750; break;
-            default: this.options.speed = 750; break;
+            case 'normal': this.options.speed = 800; break;
+            case 'fast': this.options.speed = 560; break;
+            case 'x-fast': this.options.speed = 320; break;
+            default: this.options.speed = 800; break;
         }
     }
 }
