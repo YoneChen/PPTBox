@@ -7,6 +7,7 @@
         this.options.animate = options.animate || this.options.animate;
         this.options.speed = options.speed || this.options.speed;
         this.getSpeed(this.options.speed);
+        container.innerHTML += "<div class='pre-button'>&lt;</div><div class='next-button'>&gt;</div>";        
         this.el = {
             container: container,
             boxList: container.querySelectorAll('section')
@@ -29,10 +30,17 @@
             this.bindEvent();
         },
         bindEvent: function () {
+            var self = this;
+            this.el.container.querySelector('.pre-button').addEventListener('click',function(e) {
+                self.animate(0, self.options.animate);
+            });
+            this.el.container.querySelector('.next-button').addEventListener('click',function(e) {
+                self.animate(1, self.options.animate);
+            });
+
             var boxList = this.el.boxList;
             var startX, distanceX, isDown = false, isSwipe = false;
             for(var i =0; i < boxList.length;i++) {
-                var self = this;
                 var swipeWidth = boxList[i].clientWidth / 15;
                 // });
                 boxList[i].addEventListener('touchstart', function (e) {
