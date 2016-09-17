@@ -1,4 +1,4 @@
-# PPTBox
+# PPTBox v1.0.0
 ## About
 What can PPTBox do? 
 Beautify your website like pages of powerpoint.

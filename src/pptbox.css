@@ -12,6 +12,7 @@
 }
 .show {
     opacity: 1!important;
+    z-index: 100!important;
 }
 @keyframes drop-current-pre {
     from {
@@ -329,60 +330,56 @@
     from {
       opacity: 1;
       transform: rotateY(0);
-      z-index: 1;
     }
     50% {
+      opacity: 0;
       transform: rotateY(-90deg);
     }
     to {
-      opacity: 1;
+      opacity: 0;
       transform: rotateY(-180deg);
-      z-index: 0;
     }
 }
 @keyframes rotate-current-next {
     from {
       opacity: 1;
       transform: rotateY(0);
-      z-index: 1;
     }
     50% {
+      opacity: 0;
       transform: rotateY(90deg);
     }
     to {
-      opacity: 1;
+      opacity: 0;
       transform: rotateY(180deg);
-      z-index: 0;
     }
 }
 @keyframes rotate-next-current {
     from {
-      opacity: 1;
+      opacity: 0;
       transform: rotateY(180deg);
-      z-index: 0;
     }
     50% {
+      opacity: 0;
       transform: rotateY(90deg);
     }
     to {
       opacity: 1;
       transform: rotateY(0);
-      z-index: 1;
     }
 }
 @keyframes rotate-pre-current {
     from {
-      opacity: 1;
+      opacity: 0;
       transform: rotateY(-180deg);
-      z-index: 0;
     }
     50% {
+      opacity: 0;
       transform: rotateY(-90deg);
     }
     to {
       opacity: 1;
       transform: rotateY(0);
-      z-index: 1;
     }
 }
 .rotate-current-pre {
