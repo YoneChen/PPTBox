@@ -1,6 +1,9 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0;    
+    font-family: "Helvetica Neue", Helvetica, arial, freesans, clean, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 200;
 }
 html,body {
     height: 100%;
@@ -33,4 +36,5 @@ html,body {
       color:#fff;
       font-size:12px;
       overflow: auto;
+      font-weight: lighter;
   }
