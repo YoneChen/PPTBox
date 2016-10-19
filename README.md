@@ -31,7 +31,7 @@ Attribute "speed" in element define the speed of animation:
         </div>
         
 # PPTBox v1.0.0 中文
-## 关于PPTBox 
+## 关于PPTBox ——将html变成PPT
 
 *    PPTBox是一款可以具有ppt切换效果的html插件，可以给你的网页提供切换动效；
 *    PPTBox具有十余种切换动画，你可以将它运用在文章翻页、图片轮播上，当然，它也支持移动端（支持手滑切换）。
