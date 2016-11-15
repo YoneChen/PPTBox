@@ -17,9 +17,10 @@
     height: 64px;
     width: 32px;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 32px 32px 0;
     color: #fff;
     font-size: 28px;
-    text-align: center;
+    text-align: left;
     z-index: 1000;
     line-height: 200%;
     cursor: pointer;
@@ -31,9 +32,10 @@
     height: 64px;
     width: 32px;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 32px 0 0 32px;
     color: #fff;
     font-size: 28px;
-    text-align: center;
+    text-align: right;
     z-index: 1000;
     line-height: 200%;
     cursor: pointer;
@@ -137,7 +139,7 @@
 .drop-next-current {
     animation-name: drop-next-current;
     -webkit-animation-name: drop-next-current;
-    animation-fill-mode: both;   
+    animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }
 .drop-pre-current {
