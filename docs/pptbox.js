@@ -8,10 +8,19 @@
         this.options.speed = options.speed || this.options.speed;
         this.getSpeed(this.options.speed);
         this.pageStyle = container.querySelector('section').className + ' ';
-        container.innerHTML += "<div class='pre-button'>&lt;</div><div class='next-button'>&gt;</div>";
+        var preButton = document.createElement('div');
+        var nextButton = document.createElement('div');
+        preButton.innerHTML = '&lt;';
+        nextButton.innerHTML = '&gt;';
+        preButton.className = 'pre-button';
+        nextButton.className = 'next-button';
+        container.appendChild(preButton);
+        container.appendChild(nextButton);
         this.el = {
             container: container,
-            boxList: container.querySelectorAll('section')
+            boxList: container.querySelectorAll('section'),
+            preButton: preButton,
+            nextButton: nextButton
         };
         this.attr = {
             _length: this.el.boxList.length, // 总页数
@@ -31,6 +40,7 @@
                 if(boxList[i].clientHeight>maxHeight) maxHeight = boxList[i].clientHeight;
             }
             this.el.container.style.height = maxHeight+'px';
+            this.setArrow();
             this.bindEvent();
         },
         bindEvent: function() {
@@ -47,7 +57,6 @@
                 isSwipe = false;
             for (var i = 0; i < boxList.length; i++) {
                 var swipeWidth = boxList[i].clientWidth / 15;
-                // });
                 boxList[i].addEventListener('touchstart', function(e) {
                     isDown = true;
                     startX = e.touches[0].pageX;
@@ -103,12 +112,17 @@
                 self.reset(self.attr.current, _type); // 页面执行完动画进行复位
                 self.changeIndex(duration);
                 self.el.boxList[self.attr.current].className += ' show ';
+                self.setArrow();
                 self.animated = false;
             }, this.options.speed);
         },
         reset: function(index, _type) {
             this.el.boxList[index].className = this.pageStyle;
             return this.el.boxList[index];
+        },
+        setArrow: function () { // 判断箭头是否显示
+            (this.attr.next >= this.attr._length) ? this.el.nextButton.style.display = 'none' : this.el.nextButton.style.display = 'block';
+            (this.attr.pre <= -1) ? this.el.preButton.style.display = 'none' : this.el.preButton.style.display = 'block';
         },
         changeIndex: function(duration) {
             if (duration) {

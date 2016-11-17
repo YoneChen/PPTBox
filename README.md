@@ -1,4 +1,4 @@
-# PPTBox v1.0.1
+# PPTBox v1.0.2
 ## About
 What can PPTBox do?
 *    Beautify your website like pages of powerpoint.
@@ -30,7 +30,7 @@ Attribute "speed" in element define the speed of animation:
         	//Your pages.
         </div>
 
-# PPTBox v1.0.1 中文
+# PPTBox v1.0.2 中文
 ## 关于PPTBox ——将html变成PPT
 
 *    PPTBox是一款可以具有ppt切换效果的html插件，可以给你的网页提供切换动效；
