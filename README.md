@@ -53,7 +53,7 @@ Attribute "speed" in element define the speed of animation:
         <!-- 引入pptbox.js -->
         <script src="pptbox.js"></script>
 
-使用"animate"属性选择动画效果：<a href="http://yorkchan94.github.io/PPTBox/?type=1">示例</a>
+使用"animate"属性选择动画效果：<a href="http://yonechen.github.io/PPTBox/?type=1">示例</a>
 *    rotate|skew|tumble|drop|scale|push|turn|drag|slide|switch
 
 使用"speed"属性选择动画切换速度：
